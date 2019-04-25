@@ -4,16 +4,16 @@ library(readr)
 library(ggplot2)
 library(dplyr)
 library(RSQLite)
-setwd("C:/Users/mtsai1/Documents/Shiny_CS_SQLite_2")
-con <- dbConnect(RSQLite::SQLite(), "sample.sqlite")
-dbGetQuery(con, "select * from csdata")
-dbDisconnect(con)
+#setwd("C:/Users/mtsai1/Documents/Shiny_CS_SQLite_2")
+#con <- dbConnect(RSQLite::SQLite(), "sample.sqlite")
+#dbGetQuery(con, "select * from csdata")
+#dbDisconnect(con)
 #dbSendQuery(con, "create table csdata (children int ,age int ,bmi float)")
 
 #input_data <- read_csv("C:/Users/mtsai1/Documents/ShinyCS/Shiny_CS_test/test.csv")
 
 
-dataset <- read_csv("C:/Users/mtsai1/Documents/Shiny_CS_SQLite_2/insurance.csv")
+dataset <- read_csv("insurance.csv")
 #factors_dataset <- c("sex", "gender", "smoker","region")
 #dataset[factors_dataset]<-lapply(dataset[factors_dataset], function (x) as.factor(x))
 #delete row with missings 
